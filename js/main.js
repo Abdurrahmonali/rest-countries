@@ -1,10 +1,6 @@
-const elDarkModeButton = document.querySelector('.link-mode-dark');
-const elDarkModeButtonMoon = document.querySelector('.for-moon-icon');
+
+const elDarkModeButton = document.querySelector('.div-link-dark-mode');
 
 elDarkModeButton.addEventListener('click', function() {
-document.body.classlist.add('dark-mode');
-});
-
-elDarkModeButtonMoon.addEventListener('click', function() {
-document.body.classList.remove('dark-mode');
+document.body.classList.toggle('dark-mode');
 });
